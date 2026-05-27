@@ -31,6 +31,7 @@ export default function CountryCard({ country, onOpenDetail }: CountryCardProps)
           src={country.flags.svg} 
           className="w-100 h-100 object-fit-cover" 
           alt={country.flags.alt || `Bandera de ${country.name.common}`}
+          loading="lazy"
         />
         <div 
           className="position-absolute bottom-0 start-0 end-0" 
